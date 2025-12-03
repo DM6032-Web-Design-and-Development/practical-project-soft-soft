@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", sans-serif;
+}
+
+.images img {
+  max-width: 100%;
+  height: auto;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  .images { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 1024px) {
+  .images { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+body {
+  background: #FFF3EB;
+  color: #333;
+}
+
+.text {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  padding: 6px 10px;
+  color: #f2f2f2;
+}
+
+.numbertext {
+  position: absolute;
+  top: 0;
+  padding: 6px 10px;
+  font-size: 12px;
+  color: #f2f2f2;
+}
+
+.dot {
+  height: 14px;
+  width: 14px;
+  background: #bbb;
+  margin: 0 3px;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot:hover,
+.dot.active {
+  background: #717171;
+}
+
+.fade {
+  animation: fade 1.3s;
+}
+
+@keyframes fade {
+  from { opacity: .4; }
+  to { opacity: 1; }
+}
+
+header {
+  background: #FFF3EB;
+  padding: 12px 40px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+header h1 {
+  color: #DC7F7F;
+  font-size: 26px;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #555;
+}
+
+nav a:hover {
+  color: #e29578;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #E3C1B8;
+}
+
+.hero h2 {
+  font-size: 38px;
+  color: #B85454;
+  margin-bottom: 8px;
+}
+
+.hero button {
+  margin-top: 80px;
+  padding: 22px 50px;
+  background: #CC9393;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+}
+
+.hero button:hover {
+  background: #B37070;
+}
+
+.products {
+  padding: 55px 20px;
+  text-align: center;
+}
+
+.product-list {
+  margin: 25px auto;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  width: 220px;
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 8px 0;
+  color: #D25B5B;
+}
+
+.contact {
+  padding: 55px 20px;
+  text-align: center;
+}
+
+#regForm {
+  background: #fff;
+  width: 70%;
+  min-width: 300px;
+  padding: 35px;
+  margin: 80px auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  margin-bottom: 10px;
+}
+
+input.invalid {
+  background: #ffdddd;
+}
+
+.tab {
+  display: none;
+}
+
+.step {
+  width: 14px;
+  height: 14px;
+  background: #bbb;
+  border-radius: 50%;
+  margin: 0 2px;
+  display: inline-block;
+  opacity: .5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background: #04AA6D;
+}
+
+button {
+  border: none;
+  padding: 11px;
+  border-radius: 10px;
+  background: #DC7F7F;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  margin-top: 30px;
+}
+
+#logo {
+  top: 10px;
+  left: 30%;
+  height: 20px;
+  width: 20px;
+}
+
+.fa {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  width: 50px;
+  height:20px;
+  font-size: 28px;
+  color:white;
+  text-align:center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  background: #594C85;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: #62CC65;
+  color: white;
+}
+
+.fa-whatapp a {
+display: flex;
+
+  width: 50px;
+  height:20px;
+  font-size: 28px;
+  color:white;
+  text-align:center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.fa-instagram a {
+ display: flex;
+ 
+  width: 50px;
+  height:20px;
+  font-size: 28px;
+  color:white;
+  text-align:center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0 5px;
+} 
+
+
+  
+
+#banner {
+ max-width: 100%;
+ height: 50%;
+ margin: 0px;
+ padding: 0px; 
+}
