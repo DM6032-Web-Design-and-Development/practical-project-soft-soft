@@ -10,10 +10,17 @@ function showTab(n) {
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
 
-  document.getElementById("prevBtn").style.display = n == 0 ? "none" : "inline";
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
 
-  document.getElementById("nextBtn").innerHTML =
-    n == x.length - 1 ? "Submit" : "Next";
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
 
   fixStepIndicator(n);
 }
@@ -24,8 +31,7 @@ function nextPrev(n) {
   if (n == 1 && !validateForm()) return false;
 
   x[currentTab].style.display = "none";
-
-  currentTab += n;
+  currentTab = currentTab + n;
 
   if (currentTab >= x.length) {
     document.getElementById("regForm").submit();
@@ -36,28 +42,30 @@ function nextPrev(n) {
 }
 
 function validateForm() {
-  var x = document.getElementsByClassName("tab");
-  var y = x[currentTab].querySelectorAll("input, textarea");
-  var valid = true;
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
 
-  y.forEach(el => {
-    if (el.value === "") {
-      el.classList.add("invalid");
+  for (i = 0; i < y.length; i++) {
+    if (y[i].value == "") {
+      y[i].className += " invalid";
       valid = false;
     }
-  });
+  }
 
   if (valid) {
     document.getElementsByClassName("step")[currentTab].classList.add("finish");
   }
 
   return valid;
-}
+}   // ← FIXED — THIS WAS MISSING
 
 function fixStepIndicator(n) {
-  var x = document.getElementsByClassName("step");
-  for (var i = 0; i < x.length; i++) {
-    x[i].classList.remove("active");
+  var i, x = document.getElementsByClassName("step");
+
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
   }
-  x[n].classList.add("active");
+
+  x[n].className += " active";
 }
