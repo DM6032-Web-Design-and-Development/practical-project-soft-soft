@@ -18,14 +18,14 @@
 }
 
 @media (min-width: 600px) {
-  .images { grid-template-columns: 1fr; }
+  .images { grid-template-columns: 1fr 1fr 1fr; }
 }
 
 @media (min-width: 1024px) {
-  .images { grid-template-columns: 1fr 1fr; }
+  .images { grid-template-columns: 1fr 1fr 1fr; }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   .images { grid-template-columns: 1fr 1fr 1fr; }
 }
 body {
