@@ -3,8 +3,8 @@ document.getElementById("shopBtn").addEventListener("click", function() {
 });
 
 
-var currentTab = 0; 
-showTab(currentTab); 
+var currentTab = 0;
+showTab(currentTab);
 function showTab(n) {
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
@@ -47,7 +47,6 @@ function validateForm() {
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
   return valid; 
-}
 
 function fixStepIndicator(n) {
   var i, x = document.getElementsByClassName("step");
