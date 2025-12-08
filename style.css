@@ -159,47 +159,6 @@ nav a:hover {
   text-align: center;
 }
 
-#regForm {
-  background: #fff;
-  width: 70%;
-  min-width: 300px;
-  padding: 35px;
-  margin: 80px auto;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #aaa;
-  margin-bottom: 10px;
-}
-
-input.invalid {
-  background: #ffdddd;
-}
-
-.tab {
-  display: none;
-}
-
-.step {
-  width: 14px;
-  height: 14px;
-  background: #bbb;
-  border-radius: 50%;
-  margin: 0 2px;
-  display: inline-block;
-  opacity: .5;
-}
-
-.step.active {
-  opacity: 1;
-}
-
-.step.finish {
-  background: #04AA6D;
-}
 
 button {
   border: none;
@@ -230,15 +189,7 @@ footer {
  padding: 0px; 
 }
 
-.tab {
-  display: none;
-}
-.step.active {
-  opacity: 1;
-}
-.step.finish {
-  background-color: #4CAF50;
-}
+
 
 
 
