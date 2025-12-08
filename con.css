@@ -5,16 +5,19 @@ box-sizing: border-box;
 font-family: "Times New Roman", sans-serif;
 }
 body {
-background: #FFF3EB;
-color: #705346;
-margin: 0;
-padding: 0;
-font-family: "Times New Roman", sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
+  background: #FFF3EB;
+  color: #705346;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", sans-serif;
 }
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+
 
 
 .container {
@@ -215,6 +218,17 @@ footer {
   background-color: #4CAF50;
 }
 
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+footer .icons a {
+    font-size: 22px;
+    margin: 0 8px;
+    text-decoration: none;
+}
 
 
 
