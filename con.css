@@ -12,7 +12,7 @@ body {
   font-family: "Times New Roman", sans-serif;
 }
 
-.container {
+.contactMid {
     display: flex;
     justify-content: center;
     margin: 60px 0;
