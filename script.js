@@ -5,6 +5,30 @@ document.getElementById("shopBtn").addEventListener("click", function() {
 function Oscrub() {
   alert("Available!");
 }
+function Cscrub() {
+  alert("Available!");
+}
+function Mscrub() {
+  alert("Available!");
+}
+function CHscrub() {
+  alert("Available!");
+}
+function Nscrub() {
+  alert("Available!");
+}
+function Lscrub() {
+  alert("Available!");
+}
+function toner() {
+  alert("Available!");
+}
+function clean() {
+  alert("Available!");
+}
+function moist() {
+  alert("Available!");
+}
 var currentTab = 0;
 showTab(currentTab);
 
