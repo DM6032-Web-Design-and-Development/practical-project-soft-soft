@@ -2,7 +2,9 @@ document.getElementById("shopBtn").addEventListener("click", function() {
   document.getElementById("products").scrollIntoView({ behavior: "smooth" });
 });
 
-
+function Oscrub() {
+  alert("Available!");
+}
 var currentTab = 0;
 showTab(currentTab);
 
