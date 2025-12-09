@@ -2,9 +2,9 @@ document.getElementById("shopBtn").addEventListener("click", function() {
   document.getElementById("products").scrollIntoView({ behavior: "smooth" });
 });
 
-document.getElementById("scrub1").onclick = function() {
+function Oscrub() {
   alert("Available!");
-};
+}
 
 document.getElementById("contactForm").addEventListener("submit", function(e) {
 e.preventDefault();
