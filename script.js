@@ -2,7 +2,7 @@ document.getElementById("shopBtn").addEventListener("click", function() {
   document.getElementById("products").scrollIntoView({ behavior: "smooth" });
 });
 
-document.getElementById("Scrub1").onclick = function () {
+document.getElementById("scrub1").onclick = function () {
   alert("Available!");
 };
 
