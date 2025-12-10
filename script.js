@@ -4,10 +4,10 @@ document.getElementById("shopBtn").addEventListener("click", function() {
 
 document.getElementsByTagName("Scrub 1")[1].onclick = function () { alert("Available!"); };
 
-document.getElementById("contactForm").addEventListener("submit", function(e) {
+document.getElementById("regForm").addEventListener("submit", function(e) {
 e.preventDefault();
 const name = document.getElementById("name").value;
-const gmail = document.getElementById("gmail").value;
+const email = document.getElementById("email").value;
 const message = document.getElementById("message").value;
 
 
